@@ -6,8 +6,14 @@ $(document).ready(function(){
     var foodInput = $("#food").val();
 
     var things = [moviesInput, cityInput, foodInput];
+    var favThings = [];
+    favThings.push(things[0],things[2]);
+    $("ul").prepend("<li>" + things[0] + "</li>");
+    $("ul").prepend("<li>" + things[1] + "</li>");
+    $("ul").prepend("<li>" + things[2] + "</li>");
 
     console.log(things);
+    console.log(favThings);
 
   });
 
